@@ -11,4 +11,9 @@ return {
     lazy = true,
     name = "catppuccin",
   },
+  {
+    "mhartington/oceanic-next",
+    lazy = true,
+    name = "oceaic-next"
+  }
 }
