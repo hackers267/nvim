@@ -2,8 +2,7 @@ return {
   { "simrat39/rust-tools.nvim",
     config = function()
           local opts = {
-          tools = { -- rust-tools options
-
+            tools = { -- rust-tools options
             -- how to execute terminal commands
             -- options right now: termopen / quickfix
             executor = require("rust-tools.executors").termopen,
@@ -12,23 +11,25 @@ return {
             -- The callback receives one parameter indicating the `health` of the server: "ok" | "warning" | "error"
             on_initialized = nil,
 
-            -- automatically call RustReloadWorkspace when writing to a Cargo.toml file.
+            -- 修改`Cargo.toml`文件后，自动更新项目
             reload_workspace_from_cargo_toml = true,
 
             -- These apply to the default RustSetInlayHints command
             inlay_hints = {
-              -- automatically set inlay hints (type hints)
+              -- 开户嵌套提示
               -- default: true
               auto = true,
 
               -- Only show inlay hints for the current line
+              -- 只对当行开户嵌套提示
               only_current_line = false,
 
-              -- whether to show parameter hints with the inlay hints or not
+              -- 是否在嵌套提示中开户参数提示
               -- default: true
               show_parameter_hints = true,
 
               -- prefix for parameter hints
+              -- 参数提示的前缀
               -- default: "<-"
               parameter_hints_prefix = "<- ",
 
