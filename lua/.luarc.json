@@ -1,0 +1,16 @@
+{
+    "workspace.library": [
+        "/home/silence/.config/nvim",
+        "/home/silence/.local/share/nvim/lazy/lazy.nvim",
+        "/home/silence/.local/share/nvim/lazy/nvim-lspconfig",
+        "/home/silence/.local/share/nvim/lazy/cmp-nvim-lsp",
+        "/home/silence/.local/share/nvim/lazy/cmp_luasnip",
+        "/home/silence/.local/share/nvim/lazy/rust-tools.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/lib/nvim",
+        "/home/silence/.local/state/nvim/lazy/readme",
+        "/home/silence/.local/share/nvim/lazy/cmp-nvim-lsp/after",
+        "/home/silence/.local/share/nvim/lazy/cmp_luasnip/after",
+        "${3rd}/luassert/library"
+    ]
+}

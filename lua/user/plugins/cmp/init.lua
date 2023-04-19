@@ -39,17 +39,48 @@ return {
         }),
         window = {},
         sources = cmp.config.sources({
-	  { name = "nvim_lsp" },
-	  { name = "luasnip" },
-	  { name = "path" },
-	  { name = "crates" },
-        },{
+	        { name = "nvim_lsp" },
+	        { name = "luasnip" },
+	        { name = "path" },
+	        { name = "crates" },
+        },
+        {
           { name = "buffer" }
         })
       }
     end,
   },
-  { "hrsh7th/cmp-nvim-lsp" },
+  { "hrsh7th/cmp-nvim-lsp",
+  dependencies = {
+    "neovim/nvim-lspconfig"
+  },
+    config = function()
+
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+local lspconfig = require("lspconfig")
+local servers = {'lua_ls'}
+for _,lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    capabilities = capabilities,
+  }
+lspconfig.lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {'vim'},
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true)
+      },
+      telemetry = {
+        enable = false,
+      }
+    },
+  }
+}
+end
+    end,
+   },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-nvim-lua" },
   { "hrsh7th/cmp-nvim-lsp-signature-help" },
@@ -66,4 +97,3 @@ return {
     end,
   }
 }
-
