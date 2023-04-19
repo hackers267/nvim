@@ -18,6 +18,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "c79c37927bb6a937b5b85c45125db75dc204a6ef" },
   "nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e" },
   "oceaic-next": { "branch": "master", "commit": "5ef31a34204f84714885ae9036f66a626036c3dc" },
+  "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },
   "rust-tools.nvim": { "branch": "master", "commit": "71d2cf67b5ed120a0e31b2c8adb210dd2834242f" },
   "tokyonight.nvim": { "branch": "main", "commit": "ef8f5917f1a3972e6dd083c1ea74dafcb54f9917" }
 }
