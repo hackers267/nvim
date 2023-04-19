@@ -1,4 +1,5 @@
 {
+  "LspUI.nvim": { "branch": "main", "commit": "6c307d56e75dcdbc353d019daf46035f79a613de" },
   "LuaSnip": { "branch": "master", "commit": "8d6c0a93dec34900577ba725e91c44b8d3ca1f45" },
   "catppuccin": { "branch": "main", "commit": "46bf7de94cb3820553067747cdd65d4605dbc908" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
