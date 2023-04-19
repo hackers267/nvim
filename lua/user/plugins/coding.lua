@@ -32,5 +32,37 @@ return {
       vim.o.timeoutlen = 300
       require("which-key").setup()
     end,
+  },
+  {
+    "kevinhwang91/nvim-bqf",
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencise = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+	require("todo-comments").setup()
+    end,
+  },
+  {
+    "danymat/neogen",
+    dependencise = {
+      "nvim-treesitter/nvim-treesitter",
+      config = true
+    },
+  },
+  {
+    "kosayoda/nvim-lightbulb",
+    dependencise = {
+      "antoinemadec/FixCursorHold.nvim",
+    },
+    config = function()
+      require("nvim-lightbulb").setup({
+        autocmd = {
+          enabled = true
+        }
+      })
+    end,
   }
 }
