@@ -64,5 +64,8 @@ return {
         }
       })
     end,
+  },
+  {
+    "ethanholz/nvim-lastplace",
   }
 }
