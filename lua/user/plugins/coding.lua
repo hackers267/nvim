@@ -14,10 +14,23 @@ return {
   {
     "jose-elias-alvarez/null-ls.nvim",
     config = function()
-      require('null-ls').setup()
+      local null_ls = require('null-ls')
+      null_ls.setup({
+        sources = {
+          null_ls.builtins.code_actions.gitsigns,
+        }
+      })
     end,
     dependencise = {
       "nvim-lua/plenary.nvim",
     }
+  },
+  {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup()
+    end,
   }
 }
