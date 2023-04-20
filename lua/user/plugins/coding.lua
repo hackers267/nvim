@@ -66,6 +66,12 @@ return {
     end,
   },
   {
+    "numToStr/Comment.nvim",
+    config = function()
+      require("Comment").setup()
+    end,
+  },
+  {
     "ethanholz/nvim-lastplace",
   },
   {

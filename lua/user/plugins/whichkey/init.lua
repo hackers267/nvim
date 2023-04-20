@@ -16,7 +16,6 @@ return {
           r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File", noremap=false, },
           n = { "New File" }, -- just a label. don't create any mapping
           e = "Edit File", -- same as above
-          ["1"] = "which_key_ignore",  -- special label to hide it in the popup
           b = { function() print("bar") end, "Foobar" } -- you can also pass functions!
         },
         t = {
@@ -24,7 +23,7 @@ return {
           e = {"<cmd>NvimTreeToggle<cr>", "Toggle Tree"},
           o = {"<cmd>NvimTreeOpen<cr>", "Open Tree"},
           c = {"<cmd>NvimTreeClose<cr>", "Close Tree"},
-        }
+        },
       },
       opts)
     end,
