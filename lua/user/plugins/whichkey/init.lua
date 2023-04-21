@@ -24,6 +24,14 @@ return {
           o = {"<cmd>NvimTreeOpen<cr>", "Open Tree"},
           c = {"<cmd>NvimTreeClose<cr>", "Close Tree"},
         },
+        p = {
+          name = "Preview",
+          d = { function() require("goto-preview").goto_preview_definition() end, "Preview Definition"},
+          t = { function() require("goto-preview").goto_preview_type_definition() end, "Preview Type Definition"},
+          i = { function() require("goto-preview").goto_preview_implementation() end, "Preview Implementation"},
+          P = { function() require("goto-preview").close_all_win() end, "Close Preview"},
+          pr = { function() require("goto-preview").goto_preview_references() end, "Preview References"},
+        }
       },
       opts)
     end,

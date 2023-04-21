@@ -1,3 +1,5 @@
+local glow = require("user.plugins.ui.glow")
+
 return {
   { 'nvim-lualine/lualine.nvim',
     dependencies = {
@@ -45,4 +47,11 @@ return {
       require("lsp_signature").setup()
     end,
   },
+  {
+    "rmagatti/goto-preview",
+    config = function()
+      require("goto-preview").setup()
+    end,
+  },
+  glow,
 }
