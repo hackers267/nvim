@@ -1,4 +1,4 @@
-require("user.plugins.cmp.rust_cmp")
+local rust = require("user.plugins.cmp.rust_cmp")
 
 return {
   { "hrsh7th/cmp-path" },
@@ -99,4 +99,5 @@ return {
   { "hrsh7th/cmp-nvim-lsp-signature-help" },
   { "L3MON4D3/LuaSnip" },
   { "saadparwaiz1/cmp_luasnip" },
+  rust,
 }
