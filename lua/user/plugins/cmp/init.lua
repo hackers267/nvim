@@ -16,7 +16,7 @@ return {
           ['<C-u>'] = cmp.mapping.scroll_docs(-4), -- Up
           ['<C-d>'] = cmp.mapping.scroll_docs(4), -- Down
           ['<C-Space>'] = cmp.mapping.complete(),
-          ['CR'] = cmp.mapping.confirm {
+          ['<CR>'] = cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Replace,
             select = true,
           },
@@ -55,6 +55,8 @@ return {
   },
   { "hrsh7th/cmp-nvim-lsp",
   dependencies = {
+      "rafamadriz/friendly-snippets",
+      "L3MON4D3/LuaSnip",
     "neovim/nvim-lspconfig"
   },
   config = function()

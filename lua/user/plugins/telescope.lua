@@ -5,5 +5,8 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons',
     'neovim/nvim-lspconfig',
-  }
+  },
+  config = function()
+    require('telescope').load_extension("refactoring")
+  end
 }

@@ -9,7 +9,23 @@ return {
     end
   },
   {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup()
+    end,
+  },
+  {
     "nvim-lua/plenary.nvim"
+  },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencise = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("refactoring").setup()
+    end,
   },
   {
     "jose-elias-alvarez/null-ls.nvim",

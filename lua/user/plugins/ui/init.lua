@@ -1,4 +1,8 @@
 local glow = require("user.plugins.ui.glow")
+local bufferline = require("user.plugins.ui.bufferline")
+local popup = require("user.plugins.ui.popup")
+local project = require("user.plugins.ui.project")
+local blankline = require("user.plugins.ui.blankline")
 
 return {
   { 'nvim-lualine/lualine.nvim',
@@ -54,4 +58,8 @@ return {
     end,
   },
   glow,
+  blankline,
+  bufferline,
+  popup,
+  project,
 }
