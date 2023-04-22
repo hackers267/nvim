@@ -3,12 +3,12 @@ return {
   dependencies = {
       "rafamadriz/friendly-snippets",
       "L3MON4D3/LuaSnip",
-    "neovim/nvim-lspconfig"
+      "neovim/nvim-lspconfig"
   },
   config = function()
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local lspconfig = require("lspconfig")
-    local servers = {'lua_ls','tsserver','cssls','eslint','rust_analyzer'}
+    local servers = {'lua_ls','cssls','eslint','rust_analyzer'}
     for _,lsp in ipairs(servers) do
       lspconfig[lsp].setup {
         capabilities = capabilities,
@@ -35,4 +35,10 @@ return {
   { "hrsh7th/cmp-nvim-lsp-signature-help" },
   { "L3MON4D3/LuaSnip" },
   { "saadparwaiz1/cmp_luasnip" },
+  { 
+    "jose-elias-alvarez/typescript.nvim",
+    config = function()
+      require("typescript").setup({})
+    end,
+  },
 }
