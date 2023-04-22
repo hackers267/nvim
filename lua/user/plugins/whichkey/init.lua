@@ -31,6 +31,13 @@ return {
           i = { function() require("goto-preview").goto_preview_implementation() end, "Preview Implementation"},
           P = { function() require("goto-preview").close_all_win() end, "Close Preview"},
           pr = { function() require("goto-preview").goto_preview_references() end, "Preview References"},
+        },
+        a = {
+          name = "Action",
+        },
+        r = {
+          name = "Runner",
+          f = { "<cmd>RunFile<cr>", "Run File", noremap = true, silent = false },
         }
       },
       opts)
