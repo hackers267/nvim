@@ -11,12 +11,9 @@ return {
       }
       wk.register({
         f = {
-          name = "file", -- optional group name
+          name = "File", -- optional group name
           f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
           r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File", noremap=false, },
-          n = { "New File" }, -- just a label. don't create any mapping
-          e = "Edit File", -- same as above
-          b = { function() print("bar") end, "Foobar" } -- you can also pass functions!
         },
         t = {
           name = "tree",
@@ -41,6 +38,12 @@ return {
         }
       },
       opts)
+      wk.register({
+        f = {
+          name = "Find",
+          a = { "<cmd>HopChar1<cr>", "Find Char AnyWhere", noremap = false },
+        },
+      })
     end,
   },
 }
