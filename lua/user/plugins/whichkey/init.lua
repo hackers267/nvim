@@ -11,15 +11,14 @@ return {
       }
       wk.register({
         f = {
-          name = "File", -- optional group name
+          name = "File Or Find", -- optional group name
           f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
           r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File", noremap=false, },
+          g = { "<cmd>Telescope live_grep<cr>", "Search A Word In Project", noremap=false, },
         },
         t = {
           name = "tree",
-          e = {"<cmd>NvimTreeToggle<cr>", "Toggle Tree"},
-          o = {"<cmd>NvimTreeOpen<cr>", "Open Tree"},
-          c = {"<cmd>NvimTreeClose<cr>", "Close Tree"},
+          f = {"<cmd>NvimTreeFocus<cr>", "Focus Tree"},
         },
         p = {
           name = "Preview",
