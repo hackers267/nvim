@@ -30,6 +30,13 @@ return {
         },
         a = {
           name = "Action",
+          a = { "<cmd>TypescriptAddMissingImports<cr>", "Add Missing Imports"},
+          c = { "<cmd>LspUI code_action<cr>", "Code Action", noremap = true, silent = true },
+          n = { "<cmd>LspUI rename<cr>", "Rename", noremap = true, silent = true },
+          f = { "<cmd>TypescriptFixAll<cr>", "Fix TypeScript" },
+          r = { "<cmd>TypescriptRemoveUnused<cr>", "Remove Unused" },
+          e = { "<cmd>TypescriptRenameFile<cr>", "Rename File" },
+          g = { "<cmd>TypescriptGoToSourceDefinition<cr>", "Go To Source Definition" },
         },
         r = {
           name = "Runner",
@@ -42,6 +49,10 @@ return {
           name = "Find",
           a = { "<cmd>HopChar1<cr>", "Find Char AnyWhere", noremap = false },
         },
+      })
+      wk.register({
+        ["<M-Right>"] = { "<cmd>tabnext<cr>", "Next Tab", noremap = false},
+        ["<M-Left>"] = { "<cmd>tabprevious<cr>", "Previous Tab", noremap = false},
       })
     end,
   },
