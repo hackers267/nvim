@@ -102,4 +102,10 @@ return {
 	    require('nvim-search-and-replace').setup()
     end,
   },
+  {
+    "MunifTanjim/prettier.nvim",
+    config = function()
+      require("prettier").setup()
+    end,
+  }
 }
