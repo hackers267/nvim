@@ -1,0 +1,236 @@
+s  <Tab>       * <Lua 469: ~/.local/share/nvim/lazy/nvim-cmp/lua/cmp/utils/keymap.lua:127>
+                 cmp.utils.keymap.set_map
+n  <Esc>       * <Lua 361: ~/.local/share/nvim/lazy/vgit.nvim/lua/vgit/ui/screen_manager.lua:156>
+n  <Space>gÞ   * <Nop>
+n  <Space>Þ    * <Nop>
+n  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "n", auto = true})<CR>
+n  <Space>rn   * <Lua 571: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:271>
+                 Rename
+n  <Space>wa   * <Lua 566: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:484>
+                 Add Workspace Folder
+n  <Space>wr   * <Lua 102: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:521>
+                 Remove Workspace Folder
+n  <Space>wl   * <Lua 774: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:61>
+                 List Workspace Folders
+n  <Space>D    * <Lua 803: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:84>
+                 Type Definition
+n  <Space>e    * <Cmd>lua vim.diagnostic.open_float()<CR>
+                 Open Diagnostics
+n  <Space>q    * <Cmd>lua vim.diagnostic.set_loclist()<CR>
+                 Set Diagnostics
+n  <Space>ca   * <Cmd>lua vim.lsp.buf.code_action()<CR>
+                 Code Action
+n  <Space>rf   * <Cmd>RunFile<CR>
+                 Run File
+n  <Space>fg     <Cmd>Telescope live_grep<CR>
+                 Search A Word In Project
+n  <Space>ff     <Cmd>Telescope find_files<CR>
+                 Find File
+n  <Space>fr     <Cmd>Telescope oldfiles<CR>
+                 Open Recent File
+n  <Space>pt   * <Lua 565: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:23>
+                 Preview Type Definition
+n  <Space>pd   * <Lua 564: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:22>
+                 Preview Definition
+n  <Space>ppr  * <Lua 563: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:26>
+                 Preview References
+n  <Space>pP   * <Lua 562: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:25>
+                 Close Preview
+n  <Space>pi   * <Lua 561: ~/.config/nvim/lua/user/plugins/whichkey/init.lua:24>
+                 Preview Implementation
+n  <Space>gU     :SReplaceAllAndSave<CR>
+n  <Space>gu     :SReplaceAndSave<CR>
+n  <Space>gR     :SReplaceAll<CR>
+n  <Space>gr     :SReplace<CR>
+	
+x  #           * y?\V<C-R>"<CR>
+                 Nvim builtin
+	
+o  %             <Plug>(MatchitOperationForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 73
+x  %             <Plug>(MatchitVisualForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 71
+n  %             <Plug>(MatchitNormalForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 69
+n  &           * :&&<CR>
+                 Nvim builtin
+x  *           * y/\V<C-R>"<CR>
+                 Nvim builtin
+n  K           * <Lua 993: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:40>
+                 Goto Hover
+
+x  S             <Plug>VSurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 619
+n  Y           * y$
+                 Nvim builtin
+n  [d          * <Cmd>lua vim.diagnostic.goto_prev()<CR>
+                 Previous Diagnostic
+o  [%            <Plug>(MatchitOperationMultiBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 81
+x  [%            <Plug>(MatchitVisualMultiBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 79
+n  [%            <Plug>(MatchitNormalMultiBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 77
+n  ]d          * <Cmd>lua vim.diagnostic.goto_next()<CR>
+                 Next Diagnostic
+o  ]%            <Plug>(MatchitOperationMultiForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 82
+x  ]%            <Plug>(MatchitVisualMultiForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 80
+n  ]%            <Plug>(MatchitNormalMultiForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 78
+x  a%            <Plug>(MatchitVisualTextObject)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 85
+n  cS            <Plug>CSurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 613
+n  cs            <Plug>Csurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 612
+n  ds            <Plug>Dsurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 611
+n  gr          * <Lua 570: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:397>
+                 References
+n  gi          * <Lua 568: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:94>
+                 Goto Implementation
+n  gd          * <Lua 567: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:74>
+                 Goto Definition
+n  gD          * <Lua 692: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:64>
+                 Goto Declaration
+o  g%            <Plug>(MatchitOperationBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 74
+x  g%            <Plug>(MatchitVisualBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 72
+n  g%            <Plug>(MatchitNormalBackward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 70
+x  gS            <Plug>VgSurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 620
+n  gcA         * <Lua 75: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:218>
+                 Comment insert end of line
+n  gcO         * <Lua 74: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:179>
+                 Comment insert above
+n  gco         * <Lua 73: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:182>
+                 Comment insert below
+x  gb          * <Plug>(comment_toggle_blockwise_visual)
+                 Comment toggle blockwise (visual)
+x  gc          * <Plug>(comment_toggle_linewise_visual)
+                 Comment toggle linewise (visual)
+	
+n  gbc         * <Lua 72: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/init.lua:107>
+                 Comment toggle current block
+	
+n  gcc         * <Lua 71: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/init.lua:103>
+                 Comment toggle current line
+	
+n  gb          * <Plug>(comment_toggle_blockwise)
+                 Comment toggle blockwise
+	
+n  gc          * <Plug>(comment_toggle_linewise)
+                 Comment toggle linewise
+n  ySS           <Plug>YSsurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 618
+n  ySs           <Plug>YSsurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 617
+n  yss           <Plug>Yssurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 616
+n  yS            <Plug>YSurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 615
+n  ys            <Plug>Ysurround
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 614
+s  <S-Tab>     * <Lua 514: ~/.local/share/nvim/lazy/nvim-cmp/lua/cmp/utils/keymap.lua:127>
+                 cmp.utils.keymap.set_map
+n  <C-W>       * <Cmd>lua require("which-key").show("\23", {mode = "n", auto = true})<CR>
+n  <C-K>       * <Lua 569: /usr/share/nvim/runtime/lua/vim/lsp/buf.lua:101>
+                 Goto Signature Help
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 66
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 63
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 62
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 61
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 60
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 59
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 58
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 55
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 54
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 53
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 51
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 50
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+	最近修改于 /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim 行 49
+x  <Plug>(prettier-format) * :Prettier textDocument/rangeFormatting<CR>
+	最近修改于 ~/.local/share/nvim/lazy/prettier.nvim/plugin/prettier.vim 行 17
+n  <Plug>(prettier-format) * :Prettier textDocument/formatting<CR>
+	最近修改于 ~/.local/share/nvim/lazy/prettier.nvim/plugin/prettier.vim 行 16
+s  <Plug>luasnip-jump-prev * <Lua 313: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:57>
+	
+s  <Plug>luasnip-jump-next * <Lua 312: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:54>
+	
+s  <Plug>luasnip-prev-choice * <Lua 311: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:51>
+	
+s  <Plug>luasnip-next-choice * <Lua 310: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:48>
+	
+s  <Plug>luasnip-expand-snippet * <Lua 309: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:45>
+	
+s  <Plug>luasnip-expand-or-jump * <Lua 308: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:42>
+	
+   <Plug>luasnip-expand-repeat * <Lua 306: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:35>
+	
+n  <Plug>luasnip-delete-check * <Lua 304: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:28>
+	
+v  <Plug>VgSurround * :<C-U>call <SNR>21_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 606
+v  <Plug>VSurround * :<C-U>call <SNR>21_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 605
+n  <Plug>YSurround * <SNR>21_opfunc2('setup')
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 604
+n  <Plug>Ysurround * <SNR>21_opfunc('setup')
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 603
+n  <Plug>YSsurround * <SNR>21_opfunc2('setup').'_'
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 602
+n  <Plug>Yssurround * '^'.v:count1.<SNR>21_opfunc('setup').'g_'
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 601
+n  <Plug>CSurround * :<C-U>call <SNR>21_changesurround(1)<CR>
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 600
+n  <Plug>Csurround * :<C-U>call <SNR>21_changesurround()<CR>
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 599
+n  <Plug>Dsurround * :<C-U>call <SNR>21_dosurround(<SNR>21_inputtarget())<CR>
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 598
+n  <Plug>SurroundRepeat * .
+	最近修改于 ~/.local/share/nvim/lazy/vim-surround/plugin/surround.vim 行 597
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
+	最近修改于 ~/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim 行 9
+x  <Plug>(comment_toggle_blockwise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())<CR>
+                 Comment toggle blockwise (visual)
+	
+x  <Plug>(comment_toggle_linewise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())<CR>
+                 Comment toggle linewise (visual)
+	
+n  <Plug>(comment_toggle_blockwise_count) * <Lua 69: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise with count
+	
+n  <Plug>(comment_toggle_linewise_count) * <Lua 68: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise with count
+	
+n  <Plug>(comment_toggle_blockwise_current) * <Lua 67: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current block
+	
+n  <Plug>(comment_toggle_linewise_current) * <Lua 66: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle current line
+	
+n  <Plug>(comment_toggle_blockwise) * <Lua 65: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle blockwise
+	
+n  <Plug>(comment_toggle_linewise) * <Lua 64: ~/.local/share/nvim/lazy/Comment.nvim/lua/Comment/api.lua:246>
+                 Comment toggle linewise
+	
+n  <C-L>       * <Cmd>nohlsearch|diffupdate|normal! <C-L><CR>
+                 Nvim builtin

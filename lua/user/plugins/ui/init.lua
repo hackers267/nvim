@@ -29,7 +29,7 @@ return {
       'nvim-lua/plenary.nvim',
     },
     config = function()
-      require('startup').setup()
+      require('startup').setup({theme = "china"})
     end,
   },
   {
