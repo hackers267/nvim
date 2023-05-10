@@ -23,4 +23,9 @@ return {
       require('gitsigns').setup()
     end,
   },
+  { 'aspeddro/gitui.nvim',
+    config = function()
+      require('gitui').setup()
+    end,
+  },
 }
