@@ -17,6 +17,10 @@ return {
           f = { "<cmd>Telescope find_files<cr>", "Find File", noremap=false, },
           g = { "<cmd>Telescope live_grep<cr>", "Search A Word In Project", noremap=false, },
         },
+        t = {
+          name = "tree",
+          t = { "<cmd>NvimTreeOpen<cr>", "Open Tree", noremap=false, },
+        },
         p = {
           name = "Preview",
           d = { function() require("goto-preview").goto_preview_definition() end, "Preview Definition"},
@@ -61,7 +65,7 @@ return {
             ["<space>wl"] = { function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end, "List Workspace Folders",  },
             ["<space>D"] = { vim.lsp.buf.type_definition, "Type Definition",  },
             ["<space>rn"] = { vim.lsp.buf.rename, "Rename",  },
-            ["gr"] = { vim.lsp.buf.references, "References",  },
+            ["gr"] = { vim.lsp.buf.references, "References", opts },
           },{opts})
         end,
       })
