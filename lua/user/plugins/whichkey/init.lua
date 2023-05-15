@@ -49,6 +49,16 @@ return {
         ["<leader>q"] = { "<cmd>lua vim.diagnostic.set_loclist()<cr>", "Set Diagnostics" },
       })
 
+      -- Use Hop
+      wk.register({
+        f = { "<cmd>HopChar1AC<cr>", "Hop Char 1 After Cursor" },
+        F = { "<cmd>HopChar1BC<cr>", "Hop Char 1 Before Cursor" },
+        w = { "<cmd>HopWord<cr>", "Hop Word" },
+        ["^"] = { "<cmd>HopLineStart<cr>", "Hop Line Start" },
+        ["$"] = { "<cmd>HopLineEnd<cr>", "Hop Line End" },
+        ["0"] = { "<cmd>HopLine<cr>", "Hop Line" },
+      })
+
       -- Use LspAttach autocommand to only map the following keys
       -- after the language server attaches to the current buffer
       vim.api.nvim_create_autocmd('LspAttach', {
