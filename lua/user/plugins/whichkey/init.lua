@@ -32,6 +32,12 @@ return {
         r = {
           name = "Runner",
           f = { "<cmd>RunFile<cr>", "Run File", noremap = true, silent = false },
+        },
+        b = {
+          name = "Buffer",
+          h = { "<cmd>BufferLineCyclePrev<cr>", "Previous Buffer", noremap = true, silent = false },
+          l = { "<cmd>BufferLineCycleNext<cr>", "Next Buffer", noremap = true, silent = false },
+          p = { "<cmd>BufferLinePick<cr>", "Pick Buffer", noremap = true, silent = false },
         }
       },
       opts)
