@@ -1,7 +1,7 @@
 -- This file is automatically loaded by plugins.config
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
+vim.g.rustfmt_fail_silently = 1
 local opt = vim.opt
 
 opt.autowrite = true -- Enable auto write
