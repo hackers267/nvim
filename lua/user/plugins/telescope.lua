@@ -7,9 +7,9 @@ return {
     'neovim/nvim-lspconfig',
   },
   config = function()
-    require('telescope').setup {
-      
-    }
-    require('telescope').load_extension("refactoring")
+    local telescope = require('telescope')
+    telescope.setup {}
+    telescope.load_extension("refactoring")
+    telescope.load_extension("projects")
   end
 }

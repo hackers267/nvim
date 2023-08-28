@@ -5,7 +5,8 @@ local project = require("user.plugins.ui.project")
 local blankline = require("user.plugins.ui.blankline")
 
 return {
-  { 'nvim-lualine/lualine.nvim',
+  {
+    'nvim-lualine/lualine.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons'
     },
@@ -29,7 +30,10 @@ return {
       'nvim-lua/plenary.nvim',
     },
     config = function()
-      require('startup').setup({theme = "china"})
+      local startup = require('startup')
+      startup.setup({
+        theme = "china",
+      })
     end,
   },
   {
