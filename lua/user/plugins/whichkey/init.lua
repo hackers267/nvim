@@ -126,6 +126,12 @@ return {
         ["$"] = { "<cmd>HopLineEnd<cr>", "Hop Line End" },
         ["0"] = { "<cmd>HopLine<cr>", "Hop Line" },
       })
+      wk.register({
+        ["<M-1>"] = { "<cmd>ToggleTerm direction=horizontal<cr>", "Toggle Horizontal Term" },
+        ["<M-2>"] = { "<cmd>ToggleTerm direction=vertical<cr>", "Toggle vertical Term" },
+        ["<M-3>"] = { "<cmd>ToggleTerm direction=float<cr>", "Toggle Float Term" },
+        ["<M-4>"] = { "<cmd>ToggleTerm direction=tab<cr>", "Toggle Tab Term" },
+      })
 
       -- Use LspAttach autocommand to only map the following keys
       -- after the language server attaches to the current buffer
